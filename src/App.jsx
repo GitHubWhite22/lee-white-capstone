@@ -107,11 +107,16 @@ function App() {
               <div className="col-sm-8 col-md-7 py-4">
                 <h4>About</h4>
                 <p className="text-body-secondary">
-                  From a homebase in the Kootenay Rockies, whites_pace is
-                  designed from top quality fibres for hard wear on mountain
-                  hikes or to draw attention to masterful craftsmanship. The
-                  patterns are rigorously test-knitted to ensure that every
-                  pattern will produce a long wearing, beautiful item.
+                  <p>
+                    From a homebase in the Canadian Kootenay Rockies,
+                    whites_pace is designed from top quality fibres for hard
+                    wear on mountain hikes or to draw attention to masterful
+                    craftsmanship.
+                  </p>
+                  <p>
+                    The patterns are rigorously test-knitted to ensure that
+                    every knit will produce a long wearing, beautiful item.
+                  </p>
                 </p>
               </div>
               <div className="col-sm-4 offset-md-1 py-4">
