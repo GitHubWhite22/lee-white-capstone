@@ -1,4 +1,9 @@
-// .gallery__button {
-//   background-color: silver;
-//   border-radius: 0.25rem;
-// }
+@use "./styles/_mixins.scss" as *;
+@use "./styles/_variables.scss" as *;
+
+.brand_logo {
+  height: 4rem;
+  @include tablet {
+    height: 8rem;
+  }
+}

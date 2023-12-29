@@ -10,6 +10,7 @@ import blue_gauntlets from "./assets/images/images/blue-gauntlets-man.jpg";
 import kids_red_toques from "./assets/images/images/children-red-toques-sweaters.jpg";
 import grey_armwarmers_scarf from "./assets/images/images/grey-armwarmers-triangle-scarf-man.jpg";
 import beaded_poncho from "./assets/images/images/beaded-poncho-lady.jpg";
+import raven_stone_logo from "./assets/logos/raven-stone-logo.png";
 
 function App() {
   return (
@@ -60,13 +61,7 @@ function App() {
               data-bs-theme-value="light"
               aria-pressed="false"
             >
-              <svg
-                className="bi me-2 opacity-50 theme-icon"
-                width="1em"
-                height="1em"
-              >
-                <use href="#sun-fill" />
-              </svg>
+              <img src="" alt="" />
               Light
               <svg className="bi ms-auto d-none" width="1em" height="1em">
                 <use href="#check2" />
@@ -160,23 +155,15 @@ function App() {
         <div className="navbar navbar-dark bg-dark shadow-sm">
           <div className="container">
             <a href="#" className="navbar-brand d-flex align-items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={20}
-                height={20}
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                aria-hidden="true"
-                className="me-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                <circle cx={12} cy={13} r={4} />
-              </svg>
-              <strong>Gallery</strong>
+              <a href="#" className="navbar-brand">
+                <img
+                  className="brand_logo
+              "
+                  src={raven_stone_logo}
+                  alt="Raven Stone Logo"
+                />
+              </a>
+              <strong></strong>
             </a>
             <button
               className="navbar-toggler"
