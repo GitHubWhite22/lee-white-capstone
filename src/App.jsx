@@ -1,8 +1,23 @@
+import { Routes } from "react-router-dom";
 import "./App.scss";
+// import LandingPage from "./Pages/LandingPage";
+import viking_sweater_photo from "./assets/images/images/viking-sweater.jpg";
+import red_slouchy_neckwarmer from "./assets/images/images/red-slouch-oversize-neckwarmer-man.jpg";
+import magenta_neckwarmer from "./assets/images/images/magenta-slouch-neckwarmer-lady.jpg";
+import orange_flower_armwarmers from "./assets/images/images/orange-flower-armwarmers-lady.jpg";
+import purple_armwarmers from "./assets/images/images/purple-armwarmers-black-triangle-neck-scarf-man.jpg";
+import blue_gauntlets from "./assets/images/images/blue-gauntlets-man.jpg";
+import kids_red_toques from "./assets/images/images/children-red-toques-sweaters.jpg";
+import grey_armwarmers_scarf from "./assets/images/images/grey-armwarmers-triangle-scarf-man.jpg";
+import beaded_poncho from "./assets/images/images/beaded-poncho-lady.jpg";
 
 function App() {
   return (
     <>
+      {/* <LandingPage /> */}
+      {/* <BrowserRouter>
+        <Routes></Routes>
+      </BrowserRouter> */}
       <svg xmlns="http://www.w3.org/2000/svg" className="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
           <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
@@ -186,55 +201,45 @@ function App() {
                 Fine designs worked in sumptuous fibres to gift or keep as
                 heirloom pieces
               </p>
-              <p>
+              {/* <p>
                 <a href="#" className="btn btn-primary my-2">
                   Shop All
                 </a>
                 <a href="#" className="btn btn-secondary my-2">
                   Go to Cart
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </section>
+
+        {/* Gallery */}
+
         <div className="album py-5 bg-body-tertiary">
           <div className="container">
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={viking_sweater_photo}
+                    alt="viking cable knit grey sweater"
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo{" "}
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill rounded-pill  btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -245,39 +250,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={red_slouchy_neckwarmer}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo{" "}
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -288,39 +280,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={magenta_neckwarmer}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo{" "}
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -331,39 +310,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={orange_flower_armwarmers}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitting Item Photo
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -374,39 +340,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={purple_armwarmers}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -417,39 +370,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={blue_gauntlets}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -460,39 +400,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={kids_red_toques}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -503,39 +430,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={beaded_poncho}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
@@ -546,39 +460,26 @@ function App() {
               </div>
               <div className="col">
                 <div className="card shadow-sm">
-                  <svg
-                    className="bd-placeholder-img card-img-top"
+                  <img
+                    className="img-fluid"
+                    src={grey_armwarmers_scarf}
+                    alt=""
                     width="100%"
                     height={225}
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Knitted Item Photo
-                    </text>
-                  </svg>
+                  />
                   <div className="card-body">
-                    <p className="card-text">
-                      <p>Price: </p>
-                      <p>Skill Level:</p>
-                      <p>Fibre:</p>
-                    </p>
+                    <p className="card-text">Hand knit pattern description.</p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <div className="btn-group">
+                      <div className="btn-group gap-3">
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           View Item
                         </button>
                         <button
                           type="button"
-                          className="btn btn-sm btn-outline-secondary"
+                          className="btn btn-sm rounded-pill btn-outline-secondary"
                         >
                           Add to Cart
                         </button>
