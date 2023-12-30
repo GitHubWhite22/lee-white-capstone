@@ -191,14 +191,14 @@ function LandingPage() {
                 Fine designs worked in sumptuous fibres to gift or keep as
                 heirloom pieces
               </p>
-              {/* <p>
-                <a href="#" className="btn btn-primary my-2">
+              <p>
+                <a href="#" className="btn btn-secondary rounded-pill my-2">
                   Shop All
                 </a>
-                <a href="#" className="btn btn-secondary my-2">
+                <a href="#" className="btn btn-secondary rounded-pill my-2">
                   Go to Cart
                 </a>
-              </p> */}
+              </p>
             </div>
           </div>
         </section>
