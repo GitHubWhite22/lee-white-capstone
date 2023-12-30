@@ -1,3 +1,9 @@
-.btn btn-sm btn-outline-secondary {
-  background-color: silver;
+@use "../styles/_mixins.scss" as *;
+@use "../styles/_variables.scss" as *;
+
+.brand_logo {
+  height: 4rem;
+  @include tablet {
+    height: 8rem;
+  }
 }
