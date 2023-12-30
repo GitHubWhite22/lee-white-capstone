@@ -218,7 +218,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Viking Cable Knit Sweater</p>
+                    <p className="card-text">Skill Level - Advanced</p>
+                    <p className="card-text">Price - $18.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -248,7 +250,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Slouchy Neckwarmer</p>
+                    <p className="card-text">Skill Level - Intermediate</p>
+                    <p className="card-text">Price - $12.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -278,7 +282,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Magenta Neckwarmer</p>
+                    <p className="card-text">Skill Level - Intermediate</p>
+                    <p className="card-text">Price - $12.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -308,7 +314,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Flowered Armwarmers</p>
+                    <p className="card-text">Skill Level - Intermediate</p>
+                    <p className="card-text">Price - $12.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -338,7 +346,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Armwarmers and Scarf</p>
+                    <p className="card-text">Skill Level - Intermediate</p>
+                    <p className="card-text">Price - $14.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -368,7 +378,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Cabled Gauntlets</p>
+                    <p className="card-text">Skill Level - Intermediate</p>
+                    <p className="card-text">Price - $12.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -398,7 +410,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Cabled Toques</p>
+                    <p className="card-text">Skill Level - Beginner</p>
+                    <p className="card-text">Price - $9.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -428,7 +442,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Beaded Poncho</p>
+                    <p className="card-text">Skill Level - Intermediate</p>
+                    <p className="card-text">Price - $14.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
@@ -458,7 +474,9 @@ function LandingPage() {
                     height={225}
                   />
                   <div className="card-body">
-                    <p className="card-text">Hand knit pattern description.</p>
+                    <p className="card-text">Scarf and Armwarmers</p>
+                    <p className="card-text">Kill Level - Intermediate</p>
+                    <p className="card-text">Price - $14.99</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group gap-3">
                         <button
