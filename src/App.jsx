@@ -1,6 +1,7 @@
 import { Routes } from "react-router-dom";
 import "./App.scss";
 // import LandingPage from "./Pages/LandingPage";
+// import Footer from "./components/Footer.jsx";
 import viking_sweater_photo from "./assets/images/images/viking-sweater.jpg";
 import red_slouchy_neckwarmer from "./assets/images/images/red-slouch-oversize-neckwarmer-man.jpg";
 import magenta_neckwarmer from "./assets/images/images/magenta-slouch-neckwarmer-lady.jpg";
@@ -11,14 +12,16 @@ import kids_red_toques from "./assets/images/images/children-red-toques-sweaters
 import grey_armwarmers_scarf from "./assets/images/images/grey-armwarmers-triangle-scarf-man.jpg";
 import beaded_poncho from "./assets/images/images/beaded-poncho-lady.jpg";
 import raven_stone_logo from "./assets/logos/raven-stone-logo.png";
+// import Cart from "./Pages/Cart.jsx";
 
 function App() {
   return (
     <>
-      {/* <LandingPage /> */}
+      {/* <Cart /> */}
       {/* <BrowserRouter>
         <Routes></Routes>
       </BrowserRouter> */}
+
       <svg xmlns="http://www.w3.org/2000/svg" className="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
           <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
@@ -110,6 +113,7 @@ function App() {
           </li>
         </ul>
       </div>
+
       <header data-bs-theme="dark">
         <div className="collapse text-bg-dark" id="navbarHeader">
           <div className="container">
@@ -179,6 +183,8 @@ function App() {
           </div>
         </div>
       </header>
+
+      {/* Header and Gallery below */}
       <main>
         <section className="py-5 text-center container">
           <div className="row py-lg-5">
