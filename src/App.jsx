@@ -10,7 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/" element={<Cart />} />
+          <Route path="/Cart" element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>

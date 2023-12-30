@@ -1,14 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 // import axios from "axios";
 
 const BASE_URL = "http://localhost:8080";
 
 function Cart() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
-    <>
+    <main>
       <section className="h-100 h-custom">
         <div className="container h-100 py-5">
           <div className="row d-flex justify-content-center align-items-center h-100">
@@ -300,7 +300,7 @@ function Cart() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }
 

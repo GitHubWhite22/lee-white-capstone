@@ -500,13 +500,13 @@ function LandingPage() {
           </div>
         </div>
       </main>
-      <footer className="text-body-secondary py-5">
+      {/* <footer className="text-body-secondary py-5">
         <div className="container">
           <p className="float-end mb-1">
             <a href="#">Back to top</a>
           </p>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }
