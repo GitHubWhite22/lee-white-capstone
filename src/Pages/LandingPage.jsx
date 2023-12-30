@@ -3,6 +3,7 @@
 // import "./LandingPage.scss";
 // import { useState, useEffect } from "react";
 import "./LandingPage.scss";
+import { Link } from "react-router-dom";
 import viking_sweater_photo from "../assets/images/images/viking-sweater.jpg";
 import red_slouchy_neckwarmer from "../assets/images/images/red-slouch-oversize-neckwarmer-man.jpg";
 import magenta_neckwarmer from "../assets/images/images/magenta-slouch-neckwarmer-lady.jpg";
@@ -192,12 +193,14 @@ function LandingPage() {
                 heirloom pieces
               </p>
               <p>
-                <a href="#" className="btn btn-secondary rounded-pill my-2">
+                {/* <a href="#" className="btn btn-secondary rounded-pill my-2">
                   Shop All
-                </a>
-                <a href="#" className="btn btn-secondary rounded-pill my-2">
-                  Go to Cart
-                </a>
+                </a> */}
+                <Link to="/Cart">
+                  <a href="#" className="btn btn-secondary rounded-pill my-2">
+                    Go to Cart
+                  </a>
+                </Link>
               </p>
             </div>
           </div>
