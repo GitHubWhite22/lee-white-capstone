@@ -176,7 +176,7 @@ function Cart() {
                       className="form-control form-control-lg"
                     />
                     <label className="form-label" htmlFor="form1">
-                      Discound code
+                      Discount code
                     </label>
                   </div>
                   <button
