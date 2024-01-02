@@ -104,9 +104,9 @@ function Header() {
                 <h4>About</h4>
                 <p className="text-body-secondary">
                   <p>
-                    From a homebase in the Canadian Kootenay Rockies, RavenStone
-                    is designed from top quality fibres for hard wear on
-                    mountain hikes or to draw attention to masterful
+                    From a homebase in the Canadian Kootenay Rockies, Raven
+                    Stone Knits are designed from top quality fibres for hard
+                    wear on mountain hikes and to draw attention to masterful
                     craftsmanship.
                   </p>
                   <p>

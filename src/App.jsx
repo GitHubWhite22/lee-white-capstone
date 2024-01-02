@@ -4,6 +4,7 @@ import LandingPage from "./Pages/LandingPage.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header";
 import Cart from "./Pages/Cart";
+// import { CartProvider } from "./Pages/CartContext.jsx";
 
 export default function App() {
   return (
