@@ -54,7 +54,7 @@ function LandingPage() {
                 <div className="card shadow-sm">
                   <img
                     className="img-fluid"
-                    src={`../assets/images/images/beaded-poncho-lady.jpg`} // Constructing the image path
+                    src={`/assets/images/${item.image}`} // Constructing the image path
                     alt={item.name}
                     width="100%"
                     height={225}

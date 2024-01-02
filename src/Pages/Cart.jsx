@@ -6,6 +6,7 @@ import orange_flower_armwarmers from "../assets/images/images/orange-flower-armw
 import blue_gauntlets from "../assets/images/images/blue-gauntlets-man.jpg";
 const BASE_URL = "http://localhost:8080";
 import { Link } from "react-router-dom";
+
 function Cart() {
   // const navigate = useNavigate();
 
@@ -176,15 +177,15 @@ function Cart() {
                       className="form-control form-control-lg"
                     />
                     <label className="form-label" htmlFor="form1">
-                      Discount code
+                      Cart Total
                     </label>
                   </div>
-                  <button
+                  {/* <button
                     type="button"
                     className="btn btn-outline-secondary btn-lg ms-3"
                   >
                     Apply
-                  </button>
+                  </button> */}
                 </div>
               </div>
               <div className="card">

@@ -1,4 +1,5 @@
 import raven_stone_logo from "../assets/logos/raven-stone-logo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -141,12 +142,14 @@ function Header() {
           <div className="container">
             <a href="#" className="navbar-brand d-flex align-items-center">
               <a href="#" className="navbar-brand">
-                <img
-                  className="brand_logo
+                <Link to="/">
+                  <img
+                    className="brand_logo
               "
-                  src={raven_stone_logo}
-                  alt="Raven Stone Logo"
-                />
+                    src={raven_stone_logo}
+                    alt="Raven Stone Logo"
+                  />
+                </Link>
               </a>
               <strong></strong>
             </a>
