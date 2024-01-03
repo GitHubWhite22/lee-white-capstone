@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
-// import axios from "axios";
+import axios from "axios";
 import magenta_neckwarmer from "../assets/images/images/magenta-slouch-neckwarmer-lady.jpg";
 import orange_flower_armwarmers from "../assets/images/images/orange-flower-armwarmers-lady.jpg";
 import blue_gauntlets from "../assets/images/images/blue-gauntlets-man.jpg";
@@ -9,6 +9,28 @@ import { Link } from "react-router-dom";
 
 function Cart() {
   // const navigate = useNavigate();
+
+  const [items, setItems] = useState([]);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/cart");
+      console.log(response.data);
+      let total = 0;
+      response.data.forEach((item) => {
+        total = total + item.price;
+      });
+      setTotal(total);
+      setItems(response.data); // Update the state with fetched data
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
   return (
     <main>
@@ -26,148 +48,58 @@ function Cart() {
                   </Link>
                 </div>
               </div>
-              <div className="card rounded-3 mb-4">
-                <div className="card-body p-4">
-                  <div className="row d-flex justify-content-between align-items-center">
-                    <div className="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src={magenta_neckwarmer}
-                        className="img-fluid rounded-3"
-                        alt="neckwarmer"
-                      />
-                    </div>
-                    <div className="col-md-3 col-lg-3 col-xl-3">
-                      <p className="lead fw-normal mb-2">Magenta Neckwarmer</p>
-                    </div>
-                    <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button
-                        className="btn btn-link px-2"
-                        onClick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                      >
-                        <i className="fas fa-minus" />
-                      </button>
-                      <input
-                        id="form1"
-                        min={0}
-                        name="quantity"
-                        defaultValue={1}
-                        type="number"
-                        className="form-control form-control-sm"
-                      />
-                      <button
-                        className="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                      >
-                        <i className="fas fa-plus" />
-                      </button>
-                    </div>
-                    <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h5 className="mb-0">$12.99</h5>
-                    </div>
-                    <div className="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" className="text-danger">
-                        <i className="fas fa-trash fa-lg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card rounded-3 mb-4">
-                <div className="card-body p-4">
-                  <div className="row d-flex justify-content-between align-items-center">
-                    <div className="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src={orange_flower_armwarmers}
-                        className="img-fluid rounded-3"
-                        alt="armwarmer"
-                      />
-                    </div>
-                    <div className="col-md-3 col-lg-3 col-xl-3">
-                      <p className="lead fw-normal mb-2">Flowered Armwarmers</p>
-                      {/* <p>
-                        <span className="text-muted">Size: </span>M{" "}
-                        <span className="text-muted">Color: </span>Grey
-                      </p> */}
-                    </div>
-                    <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button
-                        className="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                      >
-                        <i className="fas fa-minus" />
-                      </button>
-                      <input
-                        id="form1"
-                        min={0}
-                        name="quantity"
-                        defaultValue={1}
-                        type="number"
-                        className="form-control form-control-sm"
-                      />
-                      <button
-                        className="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                      >
-                        <i className="fas fa-plus" />
-                      </button>
-                    </div>
-                    <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h5 className="mb-0">$12.99</h5>
-                    </div>
-                    <div className="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" className="text-danger">
-                        <i className="fas fa-trash fa-lg" />
-                      </a>
+
+              {items.map((item) => {
+                return (
+                  <div className="card rounded-3 mb-4">
+                    <div className="card-body p-4">
+                      <div className="row d-flex justify-content-between align-items-center">
+                        <div className="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src={`../assets/images/images/${item.image}`}
+                            className="img-fluid rounded-3"
+                            alt="neckwarmer"
+                          />
+                        </div>
+                        <div className="col-md-3 col-lg-3 col-xl-3">
+                          <p className="lead fw-normal mb-2">{item.name}</p>
+                        </div>
+                        <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
+                          <button
+                            className="btn btn-link px-2"
+                            onClick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i className="fas fa-minus" />
+                          </button>
+                          <input
+                            id="form1"
+                            min={0}
+                            name="quantity"
+                            defaultValue={1}
+                            type="number"
+                            className="form-control form-control-sm"
+                          />
+                          <button
+                            className="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i className="fas fa-plus" />
+                          </button>
+                        </div>
+                        <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                          <h5 className="mb-0">${item.price}</h5>
+                        </div>
+                        <div className="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" className="text-danger">
+                            <i className="fas fa-trash fa-lg" />
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="card rounded-3 mb-4">
-                <div className="card-body p-4">
-                  <div className="row d-flex justify-content-between align-items-center">
-                    <div className="col-md-2 col-lg-2 col-xl-2">
-                      <img
-                        src={blue_gauntlets}
-                        className="img-fluid rounded-3"
-                        alt="cable knit gauntlets"
-                      />
-                    </div>
-                    <div className="col-md-3 col-lg-3 col-xl-3">
-                      <p className="lead fw-normal mb-2">Cabled Gauntlets</p>
-                    </div>
-                    <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
-                      <button
-                        className="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                      >
-                        <i className="fas fa-minus" />
-                      </button>
-                      <input
-                        id="form1"
-                        min={0}
-                        name="quantity"
-                        defaultValue={1}
-                        type="number"
-                        className="form-control form-control-sm"
-                      />
-                      <button
-                        className="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                      >
-                        <i className="fas fa-plus" />
-                      </button>
-                    </div>
-                    <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                      <h5 className="mb-0">$12.99</h5>
-                    </div>
-                    <div className="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a href="#!" className="text-danger">
-                        <i className="fas fa-trash fa-lg" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
+
               <div className="card mb-4">
                 <div className="card-body p-4 d-flex flex-row">
                   <div className="form-outline flex-fill">
@@ -175,6 +107,7 @@ function Cart() {
                       type="text"
                       id="form1"
                       className="form-control form-control-lg"
+                      value={`$${total}`}
                     />
                     <label className="form-label" htmlFor="form1">
                       Cart Total
