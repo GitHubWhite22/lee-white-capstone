@@ -78,6 +78,11 @@ function LandingPage() {
                         <button
                           type="button"
                           className="btn btn-sm rounded-pill btn-outline-secondary"
+                          onClick={(e) => {
+                            // addToCart(item)
+                            e.preventDefault();
+                            axios.post("http://localhost:8080/add", { item });
+                          }}
                         >
                           Add to Cart
                         </button>
