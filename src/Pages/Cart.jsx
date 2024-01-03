@@ -42,7 +42,7 @@ function Cart() {
                     <div className="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button
                         className="btn btn-link px-2"
-                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        onClick="this.parentNode.querySelector('input[type=number]').stepDown()"
                       >
                         <i className="fas fa-minus" />
                       </button>

@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import "./LandingPage.scss";
 import { Link } from "react-router-dom";
+import img from "../assets/images/images/beaded-poncho-lady.jpg";
 
 // const BASE_URL = "http://localhost:8080";
 
@@ -54,11 +55,12 @@ function LandingPage() {
                 <div className="card shadow-sm">
                   <img
                     className="img-fluid"
-                    src={`/assets/images/${item.image}`} // Constructing the image path
+                    src={`../assets/images/images/${item.image}`} // Use the image path from the data
                     alt={item.name}
                     width="100%"
                     height={225}
                   />
+
                   <div className="card-body">
                     <p className="card-text">{item.name}</p>
                     <p className="card-text">
