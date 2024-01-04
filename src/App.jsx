@@ -15,6 +15,7 @@ export default function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/SingleItem" element={<SingleItem />} />
+          <Route path="/:id" element={<SingleItem />} />
         </Routes>
         <Footer />
       </BrowserRouter>
