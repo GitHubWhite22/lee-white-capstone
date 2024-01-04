@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 const BASE_URL = "http://localhost:8080";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Cart() {
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchData();
@@ -114,6 +116,15 @@ function Cart() {
                   <button
                     type="button"
                     className="btn btn-success rounded-pill btn-block btn-lg"
+                    onClick={async () => {
+                      try {
+                        await axios.post("http://localhost:8080/close-cart");
+                        alert("payment accepted");
+                        navigate("/");
+                      } catch (e) {
+                        alert("nothing in cart");
+                      }
+                    }}
                   >
                     Proceed to Pay
                   </button>
