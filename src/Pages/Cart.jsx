@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import magenta_neckwarmer from "../assets/images/images/magenta-slouch-neckwarmer-lady.jpg";
-import orange_flower_armwarmers from "../assets/images/images/orange-flower-armwarmers-lady.jpg";
-import blue_gauntlets from "../assets/images/images/blue-gauntlets-man.jpg";
 const BASE_URL = "http://localhost:8080";
 import { Link } from "react-router-dom";
 
 function Cart() {
-  // const navigate = useNavigate();
-
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
 
@@ -110,15 +104,9 @@ function Cart() {
                       value={`$${total}`}
                     />
                     <label className="form-label" htmlFor="form1">
-                      Cart Total
+                      Cart Total Before Taxes
                     </label>
                   </div>
-                  {/* <button
-                    type="button"
-                    className="btn btn-outline-secondary btn-lg ms-3"
-                  >
-                    Apply
-                  </button> */}
                 </div>
               </div>
               <div className="card">
