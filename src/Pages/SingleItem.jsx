@@ -2,8 +2,8 @@ import React from "react";
 // import { useNavigate } from "react-router-dom";
 // import axios from "axios";
 import magenta_neckwarmer from "../assets/images/images/magenta-slouch-neckwarmer-lady.jpg";
-import orange_flower_armwarmers from "../assets/images/images/orange-flower-armwarmers-lady.jpg";
-import blue_gauntlets from "../assets/images/images/blue-gauntlets-man.jpg";
+// import orange_flower_armwarmers from "../assets/images/images/orange-flower-armwarmers-lady.jpg";
+// import blue_gauntlets from "../assets/images/images/blue-gauntlets-man.jpg";
 const BASE_URL = "http://localhost:8080";
 import { Link } from "react-router-dom";
 
@@ -75,12 +75,14 @@ function SingleItem() {
               </div>
               <div className="card">
                 <div className="card-body">
-                  <button
-                    type="button"
-                    className="btn btn-success rounded-pill btn-block btn-lg"
-                  >
-                    Go to Cart
-                  </button>
+                  <Link to="/Cart">
+                    <button
+                      type="button"
+                      className="btn btn-success rounded-pill btn-block btn-lg"
+                    >
+                      Go to Cart
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

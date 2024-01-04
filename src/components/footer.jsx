@@ -16,31 +16,20 @@ function Footer() {
         </a>
 
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">
-              Cart
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">
-              Pricing
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">
-              FAQs
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-muted">
-              About
-            </a>
-          </li>
+          <Link to="/">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">
+                Home
+              </a>
+            </li>
+          </Link>
+          <Link to="/Cart">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">
+                Cart
+              </a>
+            </li>
+          </Link>
         </ul>
       </footer>
     </div>
