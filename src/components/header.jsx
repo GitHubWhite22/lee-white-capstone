@@ -29,8 +29,8 @@ function Header() {
                 <p className="text-body-secondary">
                   <p>
                     From a homebase in the Canadian Kootenay Rockies, Raven
-                    Stone Knits are designed from top quality fibres for hard
-                    wear on mountain hikes and to draw attention to masterful
+                    Stone Knits are designed with exquisite fibres for hard wear
+                    on mountain hikes to draw attention to masterful
                     craftsmanship.
                   </p>
                   <p>

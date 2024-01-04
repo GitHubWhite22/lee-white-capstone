@@ -1,10 +1,8 @@
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import axios from "axios";
-// import "./LandingPage.scss";
 import { useState, useEffect } from "react";
 import "./LandingPage.scss";
 import { Link } from "react-router-dom";
-import img from "../assets/images/images/beaded-poncho-lady.jpg";
 
 // const BASE_URL = "http://localhost:8080";
 
