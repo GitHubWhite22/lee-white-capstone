@@ -4,7 +4,7 @@ import LandingPage from "./Pages/LandingPage.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header";
 import Cart from "./Pages/Cart";
-// import { CartProvider } from "./Pages/CartContext.jsx";
+import SingleItem from "./Pages/SingleItem";
 
 export default function App() {
   return (
@@ -14,6 +14,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/SingleItem" element={<SingleItem />} />
         </Routes>
         <Footer />
       </BrowserRouter>
