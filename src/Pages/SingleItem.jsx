@@ -35,9 +35,14 @@ function SingleItem() {
             </p>
             <p>
               <Link to="/Cart">
-                <a href="#" className="btn btn-secondary rounded-pill my-2">
+                <a href="#" className="btn btn-success rounded-pill my-2">
                   Go to Cart
                 </a>
+                <Link to="/">
+                  <a href="#" className="btn btn-secondary rounded-pill my-2">
+                    Back to Shop
+                  </a>
+                </Link>
               </Link>
             </p>
           </div>
@@ -47,7 +52,10 @@ function SingleItem() {
       {/* Gallery */}
       <div className="album py-5 bg-body-tertiary">
         <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div
+            className="row row-cols-1
+            g-3"
+          >
             <div className="col">
               <div className="card shadow-sm">
                 <img
