@@ -35,7 +35,10 @@ function SingleItem() {
             </p>
             <p>
               <Link to="/Cart">
-                <a href="#" className="btn btn-success rounded-pill my-2">
+                <a
+                  href="#"
+                  className="btn btn-success rounded-pill my-2 margin-3"
+                >
                   Go to Cart
                 </a>
                 <Link to="/">
