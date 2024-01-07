@@ -167,3 +167,7 @@ FOR THE FRONTEND:
 9. Start the React app:
 
    $npm start
+
+FOR BOTH BACK AND FRONT END:
+
+$npm run dev
