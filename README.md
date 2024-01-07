@@ -4,11 +4,11 @@
 
 ## Overview
 
-Raven Stone Knits is a full-stack, responsive site for visitors to find hand knitting patterns to make clothing accessories for men and women. The addition of a checkout will turn it into a fully functional e-commerce website.
+Raven Stone Knits is a full-stack, responsive site for visitors to find hand knitting patterns to make clothing accessories for men and women.
 
 ### Problem
 
-I produce high quality knitwear accessories which are highly sought after by people who see them. The problem is, I don't have the time to personally knit items for everyone who would like to own something of mine. A few people have talked me into custom orders for them, and though it's rewarding to see how happy they are, it's extremely time-consuming and not economical for me to fulfill knitwear orders on a one-to-one basis.
+I produce fine quality knitwear accessories which are highly sought after by people who see them. The problem is, I don't have the time to personally knit items for everyone who would like to own something of mine. A few people have talked me into custom orders for them, and though it's rewarding to see how happy they are, it's extremely time-consuming and not economical for me to fulfill knitwear orders on a one-to-one basis.
 
 ### Solution
 
@@ -16,23 +16,17 @@ I built an e-commerce website called Raven Stone Knits to be able to display and
 
 ### Visitor Profile
 
-Any skill level of hand knitter will be able to select and purchase a pattern from my website to be able to produce a high quality clothing accessory. The pattern will give specific guidance about which fibers can be used with which tools to create the best product. The person who purchases the pattern might be someone who's a knitter themselves, or they can find someone to follow the pattern and make the item for them.
+Any skill level of hand knitter will be able to select and purchase a pattern from my website to be able to produce a high quality clothing accessory. The pattern will give specific guidance about which fibers and tools can be used to create the best product. The person who purchases the pattern might be someone who's a knitter themselves, or they can find someone to follow the pattern and make the item for them.
 
 ### Features
 
--Site visitors will be able find information and select patterns to suit their skill level, choosing from Beginner, Intermediate or Advanced level patterns.
+-Site visitors can find information and select patterns to suit their skill level, choosing from Beginner, Intermediate or Advanced level patterns.
 
--Site visitors will be able find information and select patterns according to type of fibre, a very personal choice that can make or break one's enjoyment of the production process. They will be able to choose between merino, alpaca, or various blends.
+-Site visitors can find information and select patterns according to type of fibre, a very personal choice that can make or break one's enjoyment of the production process. They will be able to choose between merino, alpaca, or various blends.
 
--Site visitors will be able to navigate from links on the header to social media accounts linked to the page, where they can see more photos of the knitwear.
+-Site visitors can view available patterns in a gallery on the landing page that features a product photo, price, fibre type and skill level needed for production.
 
--Site visitors will be able to view available patterns in a gallery on the landing page that features a product photo, price, fibre type and skill level needed for production.
-
--Site visitors will be able to contact the site owner through contact details, most likely an email address, posted on the bottom of the landing page.
-
--Site visitors will be able to add products to a shopping cart from the gallery or from the single item page, then navigate to the SHOPPING CART page to review their selections and total before purchasing.
-
--Site visitors will receive a pdf of the patterns they have purchased once they have paid for the items in their cart.
+-Site visitors can add products to a shopping cart from the Gallery or from the Single Item Page, then navigate to the Shopping Cart Page to review their selections and total before purchasing.
 
 ### Tech Stack
 
@@ -50,15 +44,17 @@ Any skill level of hand knitter will be able to select and purchase a pattern fr
 
 ### APIs
 
-- No external API's will be used for this sprint, but might be added later so that site visitors can access libraries of knit stitches and/or videos of stitches or techniques.
+- No external API's will be used for this project, but will likely be added later so that site visitors can access libraries of knit stitches and/or videos of stitches or techniques.
 
 ### Sitemap
 
-#### All Site Pages
+#### Header
 
 ![screenshot of Raven Stone Knits header](./public/assets/images/images/header.png)
--a HEADER with the website logo for Raven Stone Knits, (which also functions as a clickable navigation link to allow the visitor to return from the landing page from any other page in the site);
+-a HEADER with the website logo for Raven Stone Knits, (which also functions as a clickable navigation link to allow the visitor to return to the Landing Page from any other page in the site);
 -clicking the hamburger on the right-hand-side of the header will allow the visitor to view a brief intro to describe the products available, and social media links.
+
+#### Footer
 
 ![screenshot of Raven Stone Knits footer](./public/assets/images/images/footer.png)
 -a FOOTER with clickable links to allow the visitor to return to the Landing Page or the Cart Page.
@@ -67,7 +63,7 @@ Any skill level of hand knitter will be able to select and purchase a pattern fr
 
 ![screenshot of Raven Stone Knits Landing Page](./public/assets/images/images/landing-page.png)
 -a heading under the title 'GALLERY' gives a one sentence description of the items pictured below.
--underneath the Gallery description is a 'Go To Cart' button, which is a clickable link that will allow visitors to navigate to the cart page, where they will be able to review their selected items.
+-underneath the Gallery description is a 'Go To Cart' button, which is a clickable link that will allow visitors to navigate to the Cart Page, where they will be able to review their selected items.
 -a GALLERY of photos of finished examples of the hand knit item patterns; the title of each item will be listed, along with the skill level needed to complete the project and the price of the pattern.
 -Two clickable buttons are underneath each item:
 -one button called 'View Item' allows visitors to navigate to the Single Item Page where they will be able to take a deeper look at the item to decide if they wish to purchase it.
@@ -76,71 +72,31 @@ Any skill level of hand knitter will be able to select and purchase a pattern fr
 #### Single Item Page
 
 ![screenshot of Raven Stone Knits Single Item Page](./public/assets/images/images/single-item.png)  
--clicking on a gallery item will lead to an individual item page which will contain a larger image of the finished knit item, the title of the item, the skill level needed to make the item, the type of fibre used, a description of the item and the price.
--in the near future, more photos of the item will be available, alongside a more specific breakdown of required tools and optional fibre choices.
+ -clicking on a Gallery Item will lead to an Single Item Page which will contain a larger image of the finished knit item, the title of the item, the skill level needed to make the item, the type of fibre used, a description of the item and the price.
+-in the near future, more photos of the item will be available, alongside a more specific breakdown of the required tools and optional fibre choices.
 -clicking the 'Add to Cart' button will allow the visitor to add that item to their shopping cart.
 -clicking the 'Back to Shop' button will allow the visitor to navigate back to the Landing Page.
--clicking the 'Go to Cart' buttone will allow the visitor to navigate to the Cart page and view the items there.
+-clicking the 'Go to Cart' button will allow the visitor to navigate to the Cart Page and view their selected items there.
 
 #### Shopping Cart Page
 
 ![screenshot of Raven Stone Knits Shopping Cart Page](./public/assets/images/images/cart.png)
 SHOPPING CART PAGE:
--while moving through the website, the visitor will have the option to add to or delete items from their cart. When they select the shopping cart option from the header, they will be taken to the shopping cart page, where they will be able to review the items in their cart before deciding whether or not to make a purchase.
+-when the site visitor hit the Go To Cart buttone from the top of the Gallery or the Footer, they will be taken to the Shopping Cart page, where they will be able to review the items in their cart and their price before deciding whether or not to make a purchase.
 
 ### Data
 
 Data will be stored in MySQL tables, which will be served to the client side through KNEX and Express.js. There will be a second table to store the client shopping cart, and a third table to store the data in that cart for the website owner to be able to monitor and track.
 
-### Auth
-
-Login functionality will not be part of the scope of this project, though it may be included in nice-to-haves.
-
-## Roadmap
-
-- Create client
-
-  - react project with routes and boilerplate pages
-
-- Create server
-
-  - express project with routing, with placeholder 200 responses
-
-- Deploy client and server projects so all commits will be reflected in production
-
-- Create migrations
-
-- Populate database with infomation from individual patterns, aka 'items', for sale on the site
-
-- Create seeds with knitting pattern item data
-
-- Deploy client and server projects so all commits will be reflected in production
-
-The following will all exist on the Landing Page:
-
--Feature: Header
--page title and description with cart and social media links
-
-- Feature: Gallery
-  Images of the items/patterns for sale will have a title, subheadings of skill level, fibre type, a description and the price.
-  Clicking on the 'Add To Cart' button will add that item to the visitor's shopping cart.
-
-- Bug fixes
-
-- DEMO DAY
-
-## Nice-to-haves
-
-Link to external API's will not be integral to the functioning of this project, but it would be nice in future to have such links so that site visitors could access external libraries containing instructions for specific knit stiches, or videos demonstrating skills needed to complete the items they've purchased. Of course, all of this information will be provided on the pattern they've purchased, but it can be nice to have access to more than one point of reference, especially for those new to hand knitting.
-
-Visitor login would be nice as an add on.
-
 ## Next Steps
 
--visitor 'Sign Up' and 'Log In' pages will be added so that return customers will be able to store shopping carts long term, and to allow repeat customers to be rewarded with discounts after 'x' number of purchases.
+-visitor 'Sign Up' and 'Log In' pages with authentication will be added so that return customers will be able to store shopping carts long term, and to allow repeat customers to be rewarded with discounts after 'x' number of purchases.
 -a discount code section will be added for visitors to be able to take advantage of flash sales and promotions offered through other sites.
 -a fully functional checkout page will be added to the site to allow visitors to see the final total including combined price of all items and taxes. When payment is complete, they will have PDF(s) sent to their e-mail adresses.
 -a 'New Additions' page will be added so that returning, long-time customers will easily be able to navigate to the most recent items added to Raven Stone Knits.
+-in the near future, site visitors will be able to navigate from links on the header to social media accounts linked to the page, where they can see more photos of the knitwear.
+-a clickable link will be added so that site visitors will be able to contact the site owner through contact details, most likely an email address, posted on the bottom of the landing page.
+-the final functionality will be the ability of site visitors to receive a pdf of the patterns they have purchased once they have paid for the items in their cart.
 
 ## Installing Raven Stone Knits Locally
 
