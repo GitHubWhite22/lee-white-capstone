@@ -1,10 +1,10 @@
 # Raven Stone Knits
 
-![screenshot of Raven Stone Knits Logo](raven-stone-logo.png)
+![screenshot of Raven Stone Knits Logo](./public/assets/images/images/raven-stone-logo.png)
 
 ## Overview
 
-Raven Stone Knits is full-stack, responsive, site for visitors to find hand knitting patterns to make clothing accessories for men and women. The addition of a checkout will turn it into a fully functional e-commerce website.
+Raven Stone Knits is a full-stack, responsive site for visitors to find hand knitting patterns to make clothing accessories for men and women. The addition of a checkout will turn it into a fully functional e-commerce website.
 
 ### Problem
 
@@ -56,16 +56,16 @@ Any skill level of hand knitter will be able to select and purchase a pattern fr
 
 #### All Site Pages
 
-![screenshot of Raven Stone Knits header](header.png)
+![screenshot of Raven Stone Knits header](./public/assets/images/images/header.png)
 -a HEADER with the website logo for Raven Stone Knits, (which also functions as a clickable navigation link to allow the visitor to return from the landing page from any other page in the site);
--cliking the hamburger on the right-hand-side of the header will allow the visitor to view a brief intro to describe the products available, and social media links.
+-clicking the hamburger on the right-hand-side of the header will allow the visitor to view a brief intro to describe the products available, and social media links.
 
-![screenshot of Raven Stone Knits footer](footer.png)
+![screenshot of Raven Stone Knits footer](./public/assets/images/images/footer.png)
 -a FOOTER with clickable links to allow the visitor to return to the Landing Page or the Cart Page.
 
 #### Landing Page
 
-![screenshot of Raven Stone Knits Landing Page](landing-page.png)
+![screenshot of Raven Stone Knits Landing Page](./public/assets/images/images/landing-page.png)
 -a heading under the title 'GALLERY' gives a one sentence description of the items pictured below.
 -underneath the Gallery description is a 'Go To Cart' button, which is a clickable link that will allow visitors to navigate to the cart page, where they will be able to review their selected items.
 -a GALLERY of photos of finished examples of the hand knit item patterns; the title of each item will be listed, along with the skill level needed to complete the project and the price of the pattern.
@@ -75,7 +75,7 @@ Any skill level of hand knitter will be able to select and purchase a pattern fr
 
 #### Single Item Page
 
-![screenshot of Raven Stone Knits Single Item Page](single-item.png)  
+![screenshot of Raven Stone Knits Single Item Page](./public/assets/images/images/single-item.png)  
 -clicking on a gallery item will lead to an individual item page which will contain a larger image of the finished knit item, the title of the item, the skill level needed to make the item, the type of fibre used, a description of the item and the price.
 -in the near future, more photos of the item will be available, alongside a more specific breakdown of required tools and optional fibre choices.
 -clicking the 'Add to Cart' button will allow the visitor to add that item to their shopping cart.
@@ -84,19 +84,13 @@ Any skill level of hand knitter will be able to select and purchase a pattern fr
 
 #### Shopping Cart Page
 
-![screenshot of Raven Stone Knits Cart](cart.png)
+![screenshot of Raven Stone Knits Shopping Cart Page](./public/assets/images/images/cart.png)
 SHOPPING CART PAGE:
 -while moving through the website, the visitor will have the option to add to or delete items from their cart. When they select the shopping cart option from the header, they will be taken to the shopping cart page, where they will be able to review the items in their cart before deciding whether or not to make a purchase.
-
-### Mockups
-
-\*Please refer to the attached screenshots of the site.
 
 ### Data
 
 Data will be stored in MySQL tables, which will be served to the client side through KNEX and Express.js. There will be a second table to store the client shopping cart, and a third table to store the data in that cart for the website owner to be able to monitor and track.
-
-### Endpoints
 
 ### Auth
 

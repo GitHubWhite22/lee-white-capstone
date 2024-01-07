@@ -1,4 +1,4 @@
-import raven_stone_logo from "../assets/logos/raven-stone-logo.png";
+import raven_stone_logo from "../../public/assets/images/images/raven-stone-logo.png";
 import { Link } from "react-router-dom";
 
 function Header() {
