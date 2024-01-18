@@ -42,6 +42,8 @@ function SingleItem() {
                   Go to Cart
                 </a>
               </Link>
+            </p>
+            <p>
               <Link to="/">
                 <a href="#" className="btn btn-secondary rounded-pill my-2">
                   Back to Shop

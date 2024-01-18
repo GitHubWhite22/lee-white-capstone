@@ -35,7 +35,7 @@ function LandingPage() {
             </p>
             <p>
               <Link to="/Cart">
-                <a href="#" className="btn btn-secondary rounded-pill my-2">
+                <a href="#" className="btn btn-success rounded-pill my-2">
                   Go to Cart
                 </a>
               </Link>
