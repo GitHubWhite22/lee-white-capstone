@@ -43,6 +43,13 @@ function Cart() {
                     </a>
                   </Link>
                 </div>
+                <div>
+                  <Link to="/Login">
+                    <a href="#" className="btn btn-secondary rounded-pill my-2">
+                      Login Page
+                    </a>
+                  </Link>
+                </div>
               </div>
 
               {items.map((item) => {

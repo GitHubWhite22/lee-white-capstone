@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
+import Login from "./Pages/Login";
 import LandingPage from "./Pages/LandingPage.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header";
@@ -12,6 +13,7 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path="Login" element={<Login />} />
           <Route path="/" element={<LandingPage />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/SingleItem" element={<SingleItem />} />

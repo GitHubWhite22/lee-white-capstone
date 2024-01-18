@@ -40,6 +40,13 @@ function LandingPage() {
                 </a>
               </Link>
             </p>
+            <p>
+              <Link to="/Login">
+                <a href="#" className="btn btn-secondary rounded-pill my-2">
+                  Login Page
+                </a>
+              </Link>
+            </p>
           </div>
         </div>
       </section>
